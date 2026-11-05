@@ -619,6 +619,7 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(BOOT_KERNEL_M
 				fi; \
 			) \
 		fi
+	$(hide) touch $(TARGET_PREBUILT_INT_KERNEL)
 
 .PHONY: kerneltags
 kerneltags: $(KERNEL_CONFIG)
